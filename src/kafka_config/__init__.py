@@ -25,3 +25,14 @@ def sasl_conf():
     print(sasl_conf)
     return sasl_conf
 
+def schema_config():
+    return {'url':ENDPOINT_SCHEMA_URL,
+    
+    'basic.auth.user.info':f"{SCHEMA_REGISTRY_API_KEY}:{SCHEMA_REGISTRY_API_SECRET}"
+
+    }
+
+if __name__ == '__main__':
+    sasl_conf()
+
+
